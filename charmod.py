@@ -1,5 +1,5 @@
-#Writing functions to modify strings to find potential matches 
-#recorded in different formats
+#Some functions for modifying the format of the model number to match 
+#potential instances of a product with slightly different formatting
 
 def repSpace(S): #in case a space in the model name appears hyphenated
 

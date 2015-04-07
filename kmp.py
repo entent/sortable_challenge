@@ -1,3 +1,7 @@
+#This library contains the function "fa" for calculating the failure 
+#array of the KMP algorithm, as well as the KMP matching algorithm in 
+#the function "match".
+
 def fa(S): #calculate the  kmp failure array for string S
 
     F = [0] #the initialized failure array
