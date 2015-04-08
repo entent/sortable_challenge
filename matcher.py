@@ -68,7 +68,7 @@ for i in range(len(products)):
     matchar.append(
     {
     pn : products[i][pn],
-    "listings" : [listings[k] for k in matchtemp]
+    'listings' : [listings[k] for k in matchtemp]
     })
 # delete matching listings to shorten listings list for future loops
     for k in range(len(matchtemp)):
@@ -76,5 +76,9 @@ for i in range(len(products)):
 
 #writing the output
 
-with open('output.txt', 'w') as outfile:
-    json.dump(matchar, outfile)
+matchar2 = [json.dumps(item) for item in matchar]
+
+outfile = open('output.txt', 'w')
+
+for item in mathcar2:
+    outfile.write('%s\n' % item)
